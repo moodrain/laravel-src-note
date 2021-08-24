@@ -20,9 +20,12 @@ xdebug.client_port=9001
 ``Language & Framework > PHP >  Debug`` 修改 Debug port 为 9001（9000 通常为 php-fpm 监听的端口）
 
 ### 测试
-
+#### 服务器模式
 ``php artisan serve``
 
 随意在 index.php 中打一个断点（在编辑器中行号和代码中间的间隔，点击左键），访问 http://127.0.0.1:8000/?XDEBUG_SESSION_START=1
 
 > 对于其他路径的调试也一样，只需要传递 XDEBUG_SESSION_START 参数即可
+
+#### 终端模式
+在 PHPStorm 右上角的 Run/Debug configuration 中添加要调试的脚本，然后点击调试按钮
